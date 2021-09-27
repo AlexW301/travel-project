@@ -73,7 +73,7 @@ html {
   overflow-x: hidden;
   
   /* Only works for chrome and firefox / Does not work on Safari or Microsoft Edge / All iphones/ipads only use safari even chrome on iphone uses safari as the render engine*/
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  overflow-x: hidden;
+
 }
 
 
@@ -119,13 +119,39 @@ body {
   }
 }
 
+/* ********************************************* */
+/* MAP AREA */
+/* ********************************************* */
+
+.map-area {
+  background-image:linear-gradient(to bottom, #24242480, #25252536), linear-gradient(to bottom, #2b8a3ebd, #37b24e8e), url(./photos/background-temp.jfif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .us-state-map {
   /* max-width: 50rem; */
   margin: 5rem 0;
 }
 
-.us-state-map:hover {
+.state {
+  fill: #ffffffb7;
+}
+
+.state:hover {
   cursor: pointer;
+}
+
+.DC2 {
+  fill: #e03131;
 }
 
 .parallax {
@@ -143,15 +169,19 @@ body {
 }
 
 .temp-space {
-  height: 50rem;
-  background-color: #61dafb;
+  height: 150rem;
 }
 
 /* ********************************************* */
 /* HEADER */
 /* ********************************************* */
 
-
+.heading {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
 
 /* ********************************************* */
 /* NAVIGATION */
