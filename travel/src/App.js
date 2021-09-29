@@ -8,7 +8,23 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="map-area">
+      <div className="intro-section">
+        <header className="header">
+          <ul className="main-nav">
+            <li className="nav-item"><a href="#" className="nav-link">Where We've Been</a></li>
+            <li className="nav-item"><a href="#" className="nav-link">About Us</a></li>
+            <li className="nav-item"><a href="#" className="nav-link">Current Location</a></li>
+          </ul>
+        </header>
+        <div className="intro-section-top">
+
+        </div>
+        <div className="intro-section-bottom">
+
+        </div>
+      </div>
+
+      <div className="map-section">
         <h1 className="heading">Click A Location On The Map!</h1>
         <USAMap className="USA-map" onClick={mapHandler} />
         <div className="legend-area">
@@ -19,7 +35,10 @@ function App() {
             </ul>
         </div>
       </div>
-      <div className="temp-space" id="test"></div>
+      <div className="temp-space" id="test">
+      </div>
+      <div className="temp-space2" id="test2">
+      </div>
     </div>
   );
 }

@@ -120,10 +120,27 @@ body {
 }
 
 /* ********************************************* */
-/* MAP AREA */
+/* INTRO SECTION */
 /* ********************************************* */
 
-.map-area {
+.intro-section {
+  height: 100vh;
+}
+
+.intro-section-top {
+  background-color: #d0ebff;
+  height: 75vh;
+}
+
+.intro-section-bottom {
+
+}
+
+/* ********************************************* */
+/* MAP SECTION */
+/* ********************************************* */
+
+.map-section {
   /* background-image:linear-gradient(to bottom, #24242480, #25252536), linear-gradient(to bottom, #2b7f8aa1, #3768b24b), url(./photos/background-temp.jfif);
   background-size: cover;
   background-position: center;
@@ -171,19 +188,48 @@ body {
 }
 
 .temp-space {
-  height: 150rem;
+  height: 100vh;
+  background-color: #61dafb;
+}
+
+.temp-space2 {
+  height: 100vh;
+  background-color: #fb61b6;
 }
 
 /* ********************************************* */
 /* HEADER */
 /* ********************************************* */
 
-.heading {
-  color: #fff;
-  font-size: 6rem;
-  font-weight: 500;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+.header {
+
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0ebff;
+  padding: 2rem;
+}
+
+.nav-item {
+
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: .4rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+
 }
 
 /* ********************************************* */
