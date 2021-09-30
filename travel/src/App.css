@@ -108,7 +108,7 @@ body {
   gap: 10rem;
   justify-content: center;
   align-items: center;
-  background-color: #d3f9d8;
+  background-color: #79a37f00;
   padding: 2rem;
   position: absolute;
   width: 100%;
@@ -120,8 +120,9 @@ body {
 
 .nav-link:link,
 .nav-link:visited {
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   letter-spacing: .4rem;
   border: none;
@@ -142,30 +143,22 @@ body {
   
 }
 
-.hero-image {
-  max-height: 30rem;
-  max-width: 30rem;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 100%;
-  flex: 2;
-}
-
 .hero-text {
   flex: 1;
 }
 
 .hero-header {
   color: #fff;
-  font-size: 5rem;
-  font-weight: 500;
+  font-size: 10rem;
+  font-weight: 600;
   letter-spacing: 1;
   margin-bottom: 2rem;
 }
 
 .hero-sub-header {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
   line-height: 1.25;
   padding: 0 5rem;
 }
@@ -175,7 +168,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 75vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,16 +177,50 @@ body {
 }
 
 .intro-section-bottom {
-  display: flex;
+  height: 50vh;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  display: flex;
+  gap: 5rem;
 }
 
-.see-our-journey-text {
+.profile-img {
+  max-height: 70rem;
+  max-width: 70rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.about-us-img {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 10rem;
+}
+
+.about-us-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 10rem;
+}
+
+.about-us-header {
   color: #333;
-  font-size: 3.4rem;
-  font-weight: 600;
+  font-size: 4.4rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+
+.about-us-body {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 /* ********************************************* */
@@ -205,7 +232,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; */
-  background-color: #c92a2a;
+  background-color: #d3f9d8;
 
   height: 100vh;
 
@@ -222,7 +249,7 @@ body {
 }
 
 .state {
-  fill: #ffffff;
+  fill: #2b8a3e;
 }
 
 .state:hover {
@@ -235,7 +262,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("./photos/temp-cover-photo.jfif");
+  /* background-image: url("./photos/temp-cover-photo.jfif"); */
 
   /* Set a specific height */
   min-height: 50rem; 
