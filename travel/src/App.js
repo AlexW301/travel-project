@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./App.css";
 import USAMap from "react-usa-map";
+import adamAndRachelPic from './photos/adam-and-rachel-temp.jpeg'
 
 function App() {
   let mapHandler = (event) => {
@@ -17,10 +18,14 @@ function App() {
           </ul>
         </header>
         <div className="intro-section-top">
-
+            <img src={adamAndRachelPic} className="hero-image" alt="#"/>
+            <div className="hero-text">
+              <h1 className="hero-header">A Little Bit About Us</h1>
+              <p className="hero-sub-header">Our names are Adam and Rachel and we are traveling the countryin our camper truck. Our goal is to travel across the country and see as much as possible.</p>
+            </div>
         </div>
         <div className="intro-section-bottom">
-
+          <p className="see-our-journey-text">See Our Journey</p>
         </div>
       </div>
 

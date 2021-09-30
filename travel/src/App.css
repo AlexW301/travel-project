@@ -89,34 +89,49 @@ body {
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #ffffff;
-  min-height: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ********************************************* */
+/* HEADER */
+/* ********************************************* */
+
+.header {
+
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3f9d8;
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+}
+
+.nav-item {
+
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: .4rem;
+  border: none;
+  transition: border 2s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #2b8a3e;
+  border-bottom: #2b8a3e solid 1px;
 }
 
 /* ********************************************* */
@@ -124,16 +139,61 @@ body {
 /* ********************************************* */
 
 .intro-section {
-  height: 100vh;
+  
+}
+
+.hero-image {
+  max-height: 30rem;
+  max-width: 30rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100%;
+  flex: 2;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-header {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1;
+  margin-bottom: 2rem;
+}
+
+.hero-sub-header {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.25;
+  padding: 0 5rem;
 }
 
 .intro-section-top {
-  background-color: #d0ebff;
+  background-image:linear-gradient(to bottom, #24242480, #25252536), linear-gradient(to bottom, #2b7f8aa1, #3768b24b), url(./photos/forest.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+  gap: 2rem;
 }
 
 .intro-section-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
 
+.see-our-journey-text {
+  color: #333;
+  font-size: 3.4rem;
+  font-weight: 600;
 }
 
 /* ********************************************* */
@@ -195,41 +255,6 @@ body {
 .temp-space2 {
   height: 100vh;
   background-color: #fb61b6;
-}
-
-/* ********************************************* */
-/* HEADER */
-/* ********************************************* */
-
-.header {
-
-}
-
-.main-nav {
-  list-style: none;
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  align-items: center;
-  background-color: #d0ebff;
-  padding: 2rem;
-}
-
-.nav-item {
-
-}
-
-.nav-link:link,
-.nav-link:visited {
-  font-size: 2rem;
-  color: #333;
-  text-decoration: none;
-  letter-spacing: .4rem;
-}
-
-.nav-link:hover,
-.nav-link:active {
-
 }
 
 /* ********************************************* */
