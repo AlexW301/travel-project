@@ -178,24 +178,25 @@ body {
 
 .intro-section-bottom {
   height: 50vh;
-  width: 114rem;
+  width: 184rem;
   margin: 0 auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
 
 }
 
 .profile-img {
-  height: auto;
-  max-width: 20rem;
+  height: 50rem;
+  max-width: auto;
   object-fit: cover;
   border-radius: 2rem;
 }
 
 .about-us-img {
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  
 }
 
 .about-us-text {
@@ -203,18 +204,40 @@ body {
 }
 
 .about-us-header {
-  color: #333;
-  font-size: 4.4rem;
-  font-weight: 500;
+  color: #2b8a3e;
+  font-size: 4.6rem;
+  font-weight: 600;
   letter-spacing: 1.8px;
+  margin-bottom: 2rem;
 }
 
 .about-us-body {
   color: #333;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 1.8;
+  padding: 0 10rem;
 }
+
+.chevron-down {
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.chevron-down-link:link,
+.chevron-down-link:visited {
+  position: absolute;
+  bottom: 0;
+  color: #333;
+}
+
+.chevron-down-link:hover,
+.chevron-down-link:active {
+  color: #333;
+}
+
+
 
 /* ********************************************* */
 /* MAP SECTION */
