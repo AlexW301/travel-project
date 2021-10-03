@@ -6,7 +6,8 @@ import { IoChevronDownOutline } from "react-icons/io5";
 
 function App() {
   let mapHandler = (event) => {
-    alert(event.target.dataset.name);
+    window.location = `/#${event.target.dataset.name}`
+    // alert(event.target.dataset.name);
   };
   return (
     <div className="App">
@@ -24,20 +25,18 @@ function App() {
               <p className="hero-sub-header">Go Explore It</p>
             </div>
         </div>
-        <div className="intro-section-bottom">
-        <div className="about-us-img">
-          <img src={profileTemp} alt="#" className="profile-img"/>
-        </div>
-          <div className="about-us-text">
+        <div className="about-us-text">
           <p className="about-us-header">A Little Bit About Us!</p>
-          <p className="about-us-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+          <p className="about-us-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <div>
           <a className="chevron-down-link" href="#map"><IoChevronDownOutline className="chevron-down" /></a>
-        </div>
+          </div>
+          </div>
+        
       </div>
 
       <div className="map-section" id="map">
-        <h1 className="heading">Click A Location On The Map!</h1>
+        <h1 className="heading">Click Anywhere On The Map!</h1>
         <USAMap className="USA-map" onClick={mapHandler} />
         <div className="legend-area">
             <ul className="legend">
@@ -47,9 +46,10 @@ function App() {
             </ul>
         </div>
       </div>
-      <div className="temp-space" id="test">
+      <div className="temp-space" id="NH">
+        <h1>New Hampshire</h1>
       </div>
-      <div className="temp-space2" id="test2">
+      <div className="temp-space2" id="MA">
       </div>
     </div>
   );
